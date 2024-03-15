@@ -37,7 +37,7 @@
 - sudo ss -ntpl
 - curl http://localhost:8080/api
 ## build frontend
-- cd ~/lms/webapp/
+- cd ~/lms-vm/webapp/
 - **vi .env**
 - VITE_API_URL=http://public-ip:8080/api  
 - npm install
@@ -45,5 +45,5 @@
 - sudo apt -y update
 - sudo apt -y install nginx
 - sudo rm -rf /var/www/html/*
-- sudo cp -r ~/lms/webapp/dist/* /var/www/html
+- sudo cp -r ~/lms-vm/webapp/dist/* /var/www/html
 - sudo systemctl restart nginx 
